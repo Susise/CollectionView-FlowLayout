@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="204" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e4P-Fd-ppC">
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="190"/>
+                        <color key="backgroundColor" red="0.4549019608" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="190" id="eYU-WA-Qox"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SimpleCell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twD-B4-FuI">
+                        <rect key="frame" x="0.0" y="190" width="204" height="60"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="twD-B4-FuI" firstAttribute="leading" secondItem="e4P-Fd-ppC" secondAttribute="leading" id="1on-am-bep"/>
+                <constraint firstItem="e4P-Fd-ppC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4cw-mc-odp"/>
+                <constraint firstItem="twD-B4-FuI" firstAttribute="top" secondItem="e4P-Fd-ppC" secondAttribute="bottom" id="7sc-HK-kZa"/>
+                <constraint firstAttribute="trailing" secondItem="e4P-Fd-ppC" secondAttribute="trailing" id="ASd-rC-bPl"/>
+                <constraint firstItem="twD-B4-FuI" firstAttribute="trailing" secondItem="e4P-Fd-ppC" secondAttribute="trailing" id="POy-Mw-Ics"/>
+                <constraint firstItem="e4P-Fd-ppC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Z1b-QA-nEl"/>
+                <constraint firstAttribute="bottom" secondItem="twD-B4-FuI" secondAttribute="bottom" id="hej-g7-Pp2"/>
+                <constraint firstItem="e4P-Fd-ppC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yBP-9f-4aC"/>
+            </constraints>
+            <size key="customSize" width="204" height="250"/>
+            <point key="canvasLocation" x="-137" y="37"/>
+        </collectionViewCell>
+    </objects>
+</document>
